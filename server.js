@@ -5,6 +5,10 @@ const port = 3000
 import fetch from 'node-fetch'
 
 // Get requests
+app.get('/', (req,res) => {
+    res.send('Hello World!')
+})
+
 app.get('/users/:id', async (req,res) => {
     // fetch request:
     let p = await fetch(`https://users.roblox.com/v1/users/${req.params.id}`)
