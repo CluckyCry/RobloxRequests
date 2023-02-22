@@ -1,8 +1,8 @@
 // Test for roblox studio
-const express = require('express')
+import express from 'express'
 const app = express()
 const port = 3000
-const fetch = require('node-fetch')
+import fetch from 'node-fetch'
 
 // Get requests
 app.get('/users/:id', async (req,res) => {
