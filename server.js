@@ -5,9 +5,7 @@ const port = process.env.PORT || 3000;
 import fetch from 'node-fetch'
 
 // Get requests
-app.get('/', (req,res) => {
-    res.send('Hello World!')
-})
+app.use(express.static('./public'))
 
 app.get('/users/:id', async (req,res) => {
     // fetch request:
