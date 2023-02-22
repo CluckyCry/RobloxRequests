@@ -2,9 +2,9 @@
   "name": "ta",
   "version": "1.0.0",
   "description": "",
-  "main": "./server.js",
+  "main": "server.js",
   "scripts": {
-    "start": "./server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
